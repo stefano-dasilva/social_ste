@@ -1,0 +1,15 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 52%;
+  @include flex-column;
+}
+.TitleWrapper{
+    @include flex-column;
+    color: white;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    gap: 0.01rem;
+      font-family: "chirp-normal", sans-serif;
+
+}

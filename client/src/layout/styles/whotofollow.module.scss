@@ -1,0 +1,81 @@
+@import "../../variables/variables.scss";
+.Wrapper {
+  height: 40%;
+  margin-top: 1.5rem;
+  background-color: $boxes;
+  margin-left: auto;
+  width: 89%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.List {
+  @include flex-column;
+  height: 92%;
+  margin-top: 0.3rem;
+}
+
+.Title {
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 800;
+  padding: 1rem;
+  height: 8%;
+}
+
+.Element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 33.33%;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.Element:hover{
+  background-color: $lighterhover;
+}
+.Info {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 1rem;
+}
+
+.Username {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.ImageWrapper {
+  display: flex;
+  width: 30%;
+  height: 30%;
+  box-sizing: border-box; // Aggiungi questa linea
+}
+
+.Image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+h2 {
+  margin: 0;
+}
+
+.Button {
+  background-color: white;
+  outline: none;
+  border-style: none;
+  padding: 0.5rem;
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 700;
+  border-radius: 2rem ;
+  width: 22%;
+  cursor: pointer;
+
+}

@@ -1,0 +1,127 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  @include pop-up;
+}
+
+.Form {
+  background-color: black;
+  width: 35%;
+  height: 80%;
+  border-radius: 1.5rem;
+  @include flex-column;
+}
+
+.Upper {
+  width: 100%;
+  height: 10%;
+  gap: 2rem;
+  color: white;
+  align-items: center;
+  @include flex-row;
+}
+.Content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+}
+.Input {
+  @include flex-column;
+}
+.NextWrapper {
+  width: 100%;
+  height: 15%;
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  margin-top: 2rem;
+}
+
+.Next {
+  width: 80%;
+  border-style: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  color: black;
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.Close {
+  font-size: 1.6rem;
+  border-radius: 1.4rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.Close:hover {
+  background-color: $hover;
+}
+
+.Inputs {
+  width: 100%;
+  @include flex-column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "chirp-normal", sans-serif;
+}
+input {
+  border: 1px solid $grey;
+  width: 93%;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  &::placeholder {
+    font-family: "chirp-normal", sans-serif;
+  }
+}
+
+.DownInputs {
+  @include flex-column;
+  color: white;
+  margin-top: 1rem;
+}
+
+.Options {
+  @include flex-row;
+  width: 100%;
+  gap: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  width: 1/4;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .Form{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    inset: 0;
+  }
+}
+

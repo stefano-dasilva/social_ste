@@ -1,0 +1,6 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 82%;
+  @include flex-row;
+}

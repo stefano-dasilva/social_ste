@@ -1,0 +1,78 @@
+@import "../../../variables/variables.scss";
+
+.Container {
+  width: 100%;
+  @include flex-row;
+  height: 25rem;
+  border-bottom: 0.01px solid $grey;
+}
+
+.ImageArea {
+  width: 10%;
+  height: 100%;
+  @include flex-column;
+  align-items: center;
+}
+.TweetWrapper {
+  width: 90%;
+  height: 100%;
+  @include flex-column;
+  justify-content: space-around;
+}
+
+.ImageWrapper {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-top: 1rem;
+}
+.Image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.Text {
+  outline: none;
+  width: 100%;
+  background-color: inherit;
+  resize: none;
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  font-size: 1rem;
+  border-style: none;
+  display: flex;
+}
+
+.Down {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Icons {
+  color: $blue;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  margin-left: 0.6rem;
+}
+
+.Button {
+  border-style: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: $blue;
+  width: 12%;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 700;
+}
+
+textarea::placeholder {
+  font-family: "chirp-normal", sans-serif;
+}

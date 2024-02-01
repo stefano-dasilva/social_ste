@@ -1,0 +1,72 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 52%;
+  @include flex-column;
+}
+
+.TweetListWrapper {
+  overflow-y: scroll;
+}
+.TweetListWrapper::-webkit-scrollbar {
+  width: 0; 
+}
+
+.TweetWrapper {
+  width: 82%;
+  @include flex-column;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 1rem;
+  color: white;
+  position: relative;
+}
+.Info {
+  @include flex-row;
+  gap: 0.3rem;
+  font-family: "chirp-normal", sans-serif;
+  margin-top: 1rem;
+}
+p {
+  margin: 0;
+}
+
+.ImageArea{
+  position: absolute;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 0.5rem;
+  left: -3.3rem;
+}
+
+.Image{
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.IconBar {
+  @include flex-row;
+  justify-content: space-between;
+  color: $grey;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.ReactionContainer {
+  @include flex-row;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.Number {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    width: auto;
+  }
+}

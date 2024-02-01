@@ -1,0 +1,134 @@
+@import "../../variables/variables.scss";
+
+.Wrapper {
+  height: 100%;
+  width: 20%;
+  border-right: 0.01px solid $border;
+  @include flex-column;
+  justify-content: space-between;
+}
+
+.List {
+  @include flex-column;
+  margin-top: 1rem;
+  gap: 0.7rem;
+  height: 50%;
+}
+.Element {
+  @include flex-row;
+  align-items: center;
+  color: white;
+  border-radius: 1.6rem;
+  padding: 0.6rem;
+  width: 60%;
+  gap: 1rem;
+  font-family: "chirp-normal", sans-serif;
+  cursor: pointer;
+}
+.Element:hover {
+  background-color: $hover;
+}
+.Button {
+  display: flex;
+  background-color: $blue;
+  width: 90%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "chirp-normal", sans-serif;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: none;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+.SpanElement {
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 400;
+}
+.Down {
+  width: 95%;
+  margin-bottom: 2rem;
+  height: 8%;
+  position: relative;
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.ImageWrapper {
+  width: 3rem;
+  border-radius: 100%;
+  height: 3rem;
+  margin-left: 0.5rem;
+}
+.Image {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.Pencil {
+  display: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.Descr {
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  @include flex-column;
+}
+.Down:hover {
+  background-color: $hover;
+}
+
+.Left {
+  @include flex-row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.LogoutMenu {
+  position: absolute;
+  top: -80%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  z-index: 1000;
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    width: 10%;
+  }
+  .SpanElement {
+    display: none;
+  }
+
+  .SpanPost {
+    display: none;
+  }
+  .Descr {
+    display: none;
+  }
+  .Pencil {
+    display: block;
+  }
+}

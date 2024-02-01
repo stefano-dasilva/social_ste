@@ -1,0 +1,60 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 100%;
+  @include flex-column;
+  position: relative;
+}
+
+
+.ImageWrapper {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  left: 0.5rem;
+  top: 0.8rem;
+  border-radius: 100%;
+}
+
+.Image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.TweetWrapper {
+  width: 80%;
+  @include flex-column;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 1rem;
+  color: white;
+}
+.Info {
+  @include flex-row;
+  gap: 0.4rem;
+  font-family: "chirp-normal", sans-serif;
+  margin-top: 1rem;
+}
+p {
+  margin: 0;
+}
+
+.IconBar {
+  @include flex-row;
+  justify-content: space-between;
+  color: $grey;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.ReactionContainer {
+  @include flex-row;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.Number {
+  font-size: 0.8rem;
+}

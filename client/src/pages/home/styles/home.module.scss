@@ -1,0 +1,110 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.Left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Right {
+  width: 45%;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Sub{
+    display: flex;
+    flex-direction: column;
+    gap : 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.Down{
+    width: 100%;
+    @include flex-column;
+    gap: 1.5rem;
+}
+
+.Upper {
+  @include flex-column;
+  align-items: flex-start;
+  height: 60%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.Title {
+  font-family: "chirp-heavy", sans-serif;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.IscHead {
+  font-family: "chirp-heavy", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+.Small {
+  font-family: "chirp-heavy", sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.Crea {
+  border-style: none;
+  outline: none;
+  padding: 0.8rem;
+  background-color: $blue;
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  width: 30%;
+  cursor: pointer;
+}
+.LoginButton {
+  border-style: none;
+  outline: none;
+  padding: 0.8rem;
+  border: 1px solid $blue;
+  background-color: inherit;
+  color: $blue;
+  font-family: "chirp-normal", sans-serif;
+  border-radius: 1.5rem;
+  width: 30%;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+h1,
+h3,
+h5 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .Left{
+   display: none;
+  }
+
+  .Right{
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

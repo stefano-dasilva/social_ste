@@ -1,0 +1,54 @@
+$font-path: "../fonts/";
+$hover: #181818;
+$lighterhover : #1D1F23;
+$blue: #3293d4;
+$boxes: #16181c;
+$grey: #71767b;
+$border: #4f4f4f;
+$translucent: #242d34;
+
+@font-face {
+  font-family: "chirp-normal";
+  src: url("#{$font-path}regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chirp-heavy";
+  src: url("#{$font-path}heavy.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin pop-up {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border {
+  border: 1px solid #4f4f4f;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin border-lg {
+  border-radius: 0.5rem;
+}

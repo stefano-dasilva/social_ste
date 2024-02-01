@@ -1,0 +1,29 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 62%;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.01px solid $grey;
+}
+.Content {
+  width: 60%;
+  color: white;
+  @include flex-column;
+  font-family: "chirp-normal", sans-serif;
+  gap: 1.2rem;
+}
+
+.Button {
+  width: 50%;
+  border-style: none;
+  background-color: $blue;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: "chirp-normal", sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

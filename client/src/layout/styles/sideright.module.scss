@@ -1,0 +1,43 @@
+@import "../../variables/variables.scss";
+
+.Wrapper {
+  height: 100%;
+  width: 30%;
+  border-left: 0.01px solid $border;
+  @include flex-column;
+}
+
+.Search {
+  display: flex;
+  flex-direction: row;
+  background-color: $boxes;
+  border-radius: 2rem;
+  padding: 0.6rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  align-items: center;
+  width: 86%;
+}
+
+.Input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: #55b3ee;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+input[type="text"]::placeholder {
+  font-family: "chirp-normal", sans-serif;
+  font-size: 1.0rem;
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    display: none;
+  }
+}

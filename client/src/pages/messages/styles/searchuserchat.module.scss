@@ -1,0 +1,66 @@
+@import "../../../variables/variables.scss";
+
+.Layer {
+  @include pop-up;
+}
+.Wrapper {
+  background-color: black;
+  width: 40%;
+  height: 85%;
+  border-radius: 1.5rem;
+  @include flex-column;
+}
+
+.Upper {
+  height: 10%;
+  @include flex-row;
+  align-items: center;
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  justify-content: space-between;
+}
+
+.Title {
+  @include flex-row;
+  gap: 2rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.Button {
+  width: 10%;
+  border-style: none;
+  background-color: white;
+  border-radius: 2rem;
+  color: black;
+  padding: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+input[type="text"]::placeholder {
+  font-family: "chirp-normal", sans-serif;
+  font-size: 1rem;
+}
+
+.Input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: white;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.SearchBox {
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+  gap: 1rem;
+  height: 8%;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.01px solid $grey;
+}

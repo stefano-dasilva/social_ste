@@ -1,0 +1,116 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form {
+  width: 40%;
+  height: 50%;
+  background-color: black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Navigation {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Content {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Options {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15%;
+  border-top: 0.01px solid $border;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Text {
+  outline: none;
+  width: 90%;
+  height: 100%;
+  background-color: inherit;
+  resize: none;
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  font-size: 2rem;
+  border-style: none;
+}
+
+.ImageArea {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ImageWrapper {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+}
+
+textarea::placeholder {
+  font-family: "chirp-normal", sans-serif;
+  font-size: 1.5rem;
+}
+.Image {
+  border-radius: 100%;
+
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.Post {
+  background-color: $blue;
+  border-style: none;
+  padding: 0.6rem;
+  color: white;
+  width: 10%;
+  border-radius: 1.4rem;
+}
+
+.Icons {
+  color: $blue;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  margin-left: 0.6rem;
+}
+
+@media (max-width: 767px) {
+  .Form{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    inset: 0;
+  }
+}

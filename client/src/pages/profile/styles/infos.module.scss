@@ -1,0 +1,53 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 100%;
+  height: 40vh;
+  @include flex-column;
+}
+.Buttons {
+  height: 20%;
+  @include flex-row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Button {
+  width: 15%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-style: none;
+  background-color: white;
+  border-radius: 2rem;
+  color: black;
+  padding: 0.7rem;
+  font-weight: bold;
+  font-family: "chirp-normal", sans-serif;
+  cursor: pointer;
+}
+
+.Names {
+  @include flex-column;
+  color: white;
+  font-family: "chirp-normal", sans-serif;
+  margin-top: 3rem;
+}
+
+.Infos {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  height: 85%;
+  @include flex-column;
+  gap: 1rem;
+  font-family: "chirp-normal", sans-serif;
+}
+.DescWrapper {
+  color: white;
+}
+.Follow{
+    @include flex-row;
+    color: white;
+    gap: 1rem;
+}

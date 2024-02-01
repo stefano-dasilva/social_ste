@@ -1,0 +1,44 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 100%;
+  @include flex-row;
+}
+
+.Button {
+  width: 33.33%;
+  border-style: none;
+  border-bottom: 0.01px solid $grey;
+  background-color: inherit;
+  font-family: "chirp-normal", sans-serif;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  &.selected {
+    color: white;
+  }
+  &.unselected {
+    color: $grey;
+  }
+}
+
+.Hidden {
+  width: 0;
+}
+
+.Border {
+  position: absolute;
+  height: 8%;
+  width: 35%;
+  bottom: 0.02rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+
+  background-color: $blue;
+}
+
+.Button:hover {
+  background-color: $hover;
+}

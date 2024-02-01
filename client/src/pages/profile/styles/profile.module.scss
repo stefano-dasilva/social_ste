@@ -1,0 +1,67 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  background-color: black;
+  width: 52%;
+  @include flex-column;
+  overflow-y: scroll;
+ 
+}
+
+ .Wrapper::-webkit-scrollbar {
+  width: 0; 
+}
+.Header {
+  @include flex-row;
+  color: white;
+  padding: 0.8rem;
+  border-bottom: 0.01px solid $border;
+  align-items: center;
+  gap: 2rem;
+  font-family: "chirp-normal", sans-serif;
+  position: sticky;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  top: 0;
+   &.scrolled {
+    background-color: rgba(139, 23, 23, 0.9); 
+  }
+}
+.Informations {
+  @include flex-column;
+}
+
+.BackWrapper {
+  width: 100%;
+  height: 12rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.BackImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profilePicWrapper {
+  position: absolute;
+  border: 3px solid black;
+  border-radius: 100%;
+  height: 70%;
+  width: 22%;
+  top: 70%;
+  left: 3%;
+}
+
+.ProfilePic {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    width: auto;
+  }
+}
